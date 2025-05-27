@@ -1,19 +1,41 @@
-# 📊 Sentiment Analysis using Python in Google Colab
+# 📊 Social Media Sentiment Analysis using Python in Google Colab
 
-This project performs a comprehensive sentiment analysis on a text dataset using Python in Google Colab. It demonstrates how a Data Scientist processes, analyzes, and reports insights from raw sentiment-labeled text data. The workflow includes data cleaning, EDA, sentiment prediction using TextBlob, and summary generation.
+This project demonstrates a complete end-to-end **Sentiment Analysis** pipeline implemented in **Python using Google Colab**. It is designed to showcase how a Data Scientist tackles real-world sentiment-labeled data to extract insights, build predictions, and generate professional reports.
 
 ---
 
-## 📁 Dataset Requirements
+## 🧠 Project Objective
 
-Your dataset should be in CSV format with at least the following columns:
+To analyze sentiment in textual data, predict the polarity (positive, negative, neutral), and generate a detailed visual and textual summary report.
+
+---
+
+## 🧰 Tools, Libraries, and Technologies Used
+
+| Category          | Tools / Libraries                                           |
+|-------------------|-------------------------------------------------------------|
+| **Environment**   | Google Colab, Jupyter Notebook                              |
+| **Language**      | Python 3                                                    |
+| **Data Handling** | Pandas                                                      |
+| **Text Cleaning** | NLTK (Natural Language Toolkit), Regular Expressions (re)   |
+| **Sentiment Model** | TextBlob                                                  |
+| **Visualization** | Seaborn, Matplotlib, WordCloud                              |
+| **Evaluation**    | Scikit-learn (Confusion Matrix, Classification Report)      |
+| **Report Export** | FPDF (for PDF report generation)                            |
+| **Optional**      | CSV file reader (via `upload` in Google Colab)              |
+
+---
+
+## 📁 Dataset Format
+
+Your dataset should be in CSV format with the following required columns:
 
 | Column Name | Description                              |
 |-------------|------------------------------------------|
-| `text`      | The raw text data for sentiment analysis |
-| `sentiment` | Original sentiment label (`positive`, `negative`, `neutral`) |
+| `text`      | The text input for sentiment analysis    |
+| `sentiment` | Labeled sentiment (`positive`, `negative`, `neutral`) |
 
-### 📌 Example
+### 📌 Example CSV
 
 ```csv
 text,sentiment
